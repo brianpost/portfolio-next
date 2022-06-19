@@ -9,3 +9,9 @@
   }
 
 }
+
+.contact {
+  input[type="submit"] {
+    @include button-variant($light, $light);
+  }
+}
