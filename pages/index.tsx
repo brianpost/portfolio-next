@@ -77,7 +77,7 @@ const Home: NextPage = () => {
     const PageColumn = ({children}: {children: React.ReactNode}) => {
         return (
             <div className="row justify-content-center">
-                <div className="col-sm-12 col-md-10 col-lg-7">
+                <div className="col-sm-12 col-lg-10 col-xl-8">
                     {children}
                 </div>
             </div>
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
                             <ProjectCard title="Northwestern University Law Review" imageName="nulr.png" imagePriority={true}>
                                 <p>Built and led the previous redesign of Northwestern University Law Review. Developed using Drupal 7.</p>
                             </ProjectCard>
-                            <ProjectCard title="SmartParticipation" imageName="smartparticipation.png">
+                            <ProjectCard title="SmartParticipation" imageName="smartparticipation.png" imagePriority={true}>
                                 <p>SmartParticipation is a custom discussion platform developed by the Cornell e-Rulemaking Initiative at Cornell University Law School.</p>
                                 <p>I worked as Programmer for the project from 2011-2014, then Lead Technologist from 2014-2017.</p>
                                 <p>The platform is a Drupal 7 distribution, and includes several custom modules.</p>
