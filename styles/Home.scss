@@ -10,8 +10,12 @@
 
 }
 
-.contact {
+#Contact {
   input[type="submit"] {
     @include button-variant($light, $light);
   }
+}
+
+#About p {
+  font-size: 1.1rem;
 }

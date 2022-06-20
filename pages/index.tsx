@@ -128,25 +128,27 @@ const Home: NextPage = () => {
             <main>
                 <div className="container">
 
-                    <section>
+                    <section id="About">
                         <PageColumn>
-                            <p>Hello, I&apos;m Brian.  I&apos;m a Full Stack Web Application Developer.</p>
-                            <p>
-                                My current focus is on building complex websites and applications
-                                using <ContentTechLink href="https://reactjs.org/">React</ContentTechLink>
-                                , <ContentTechLink href="https://nextjs.org/">Next.js</ContentTechLink>
-                                , <ContentTechLink href="https://www.typescriptlang.org/">TypeScript</ContentTechLink>
-                                , <ContentTechLink href="https://www.php.net/">PHP</ContentTechLink>
-                                , <ContentTechLink href="https://symfony.com/">Symfony</ContentTechLink>
-                                , and <ContentTechLink href="https://mariadb.com/">MariaDB</ContentTechLink>.
-                            </p>
+                            <div className="p-2">
+                                <p>Hello, I&apos;m Brian.  I&apos;m a Full Stack Web Application Developer.</p>
+                                <p>
+                                    My current focus is on building complex websites and applications
+                                    using <ContentTechLink href="https://reactjs.org/">React</ContentTechLink>
+                                    , <ContentTechLink href="https://nextjs.org/">Next.js</ContentTechLink>
+                                    , <ContentTechLink href="https://www.typescriptlang.org/">TypeScript</ContentTechLink>
+                                    , <ContentTechLink href="https://www.php.net/">PHP</ContentTechLink>
+                                    , <ContentTechLink href="https://symfony.com/">Symfony</ContentTechLink>
+                                    , and <ContentTechLink href="https://mariadb.com/">MariaDB</ContentTechLink>.
+                                </p>
+                            </div>
                         </PageColumn>
                     </section>
 
                     <section className="mt-4 mb-3">
                         <PageColumn>
                             <h2 className="h4">Featured Projects</h2>
-                            <p className="">Past projects I&apos;ve developed independently.</p>
+                            <p><em>Past projects I&apos;ve developed independently.</em></p>
                         </PageColumn>
                         <PageColumn>
                             <ProjectCard title="Northwestern University Law Review" imageName="nulr.png" imagePriority={true}>
