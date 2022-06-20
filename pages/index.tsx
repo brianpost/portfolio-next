@@ -77,7 +77,7 @@ const Home: NextPage = () => {
     const PageColumn = ({children}: {children: React.ReactNode}) => {
         return (
             <div className="row justify-content-center">
-                <div className="col-sm-12 col-lg-10 col-xl-8">
+                <div className="col-sm-12 col-lg-9 col-xl-7">
                     {children}
                 </div>
             </div>
