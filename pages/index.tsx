@@ -166,7 +166,7 @@ const Home: NextPage = () => {
                             <ProjectCard title="Politiki" imageName="politiki.gif">
                                 <p>Politiki breaks down political issues into easy to follow pro/con arguments.</p>
                                 <p>Developed all aspects of site using CakePHP, MySQL, and JavaScript.</p>
-                                <a href="http://politiki.us/" className="btn btn-sm btn-secondary">
+                                <a href="https://politiki.us/" className="btn btn-sm btn-secondary">
                                     View archived Politiki site
                                 </a>
                             </ProjectCard>
