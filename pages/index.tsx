@@ -201,7 +201,7 @@ const Home: NextPage = () => {
                             , <FooterTechLink href="https://www.typescriptlang.org/">TypeScript</FooterTechLink>
                             , <FooterTechLink href="https://getbootstrap.com/">Bootstrap</FooterTechLink>
                             , and <FooterTechLink href="https://sendgrid.com/">SendGrid</FooterTechLink>.
-                            <a href="#" className="link-light ms-3">View source</a>
+                            <a href="https://github.com/brianpost/portfolio-next" className="link-light ms-3">View source</a>
                         </div>
                     </PageColumn>
                 </div>
