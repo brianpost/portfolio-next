@@ -151,10 +151,17 @@ const Home: NextPage = () => {
                             <p><em>Past projects I&apos;ve developed independently.</em></p>
                         </PageColumn>
                         <PageColumn>
+                            <ProjectCard title="DealHeroGames" imageName="dealherogames.png" imagePriority={true}>
+                                <p>DealHeroGames helps you discover deals on top Steam games.</p>
+                                <p>Built with React, Next.js, TypeScript, Bootstrap, Symfony, and MariaDB.</p>
+                                <a href="https://www.dealhero.games/" className="btn btn-sm btn-secondary">
+                                    View DealHeroGames site
+                                </a>
+                            </ProjectCard>
                             <ProjectCard title="Northwestern University Law Review" imageName="nulr.png" imagePriority={true}>
                                 <p>Built and led the previous redesign of Northwestern University Law Review. Developed using Drupal 7.</p>
                             </ProjectCard>
-                            <ProjectCard title="SmartParticipation" imageName="smartparticipation.png" imagePriority={true}>
+                            <ProjectCard title="SmartParticipation" imageName="smartparticipation.png">
                                 <p>SmartParticipation is a custom discussion platform developed by the Cornell e-Rulemaking Initiative at Cornell University Law School.</p>
                                 <p>I worked as Programmer for the project from 2011-2014, then Lead Technologist from 2014-2017.</p>
                                 <p>The platform is a Drupal 7 distribution, and includes several custom modules.</p>
