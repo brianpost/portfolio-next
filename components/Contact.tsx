@@ -20,7 +20,7 @@ const Contact = () => {
         setIsSending(true)
         setShowSuccessMessage(false)
         setShowFailureMessage(false)
-        const res = await fetch("/api/sendgrid", {
+        const res = await fetch("/api/nodemailer", {
             body: JSON.stringify({
                 fullName,
                 email,
@@ -141,7 +141,7 @@ const Contact = () => {
             }
             {showFailureMessage &&
                 <AfterSendToast type={ToastType.Failure}>
-                    Oops! Something went wrong sending your message, please try again.
+                    Oops! Something went wrong sending your message. Please try again.
                 </AfterSendToast>
             }
         </form>

@@ -207,7 +207,7 @@ const Home: NextPage = () => {
                             Made with <FooterTechLink href="https://nextjs.org/">Next.js</FooterTechLink>
                             , <FooterTechLink href="https://www.typescriptlang.org/">TypeScript</FooterTechLink>
                             , <FooterTechLink href="https://getbootstrap.com/">Bootstrap</FooterTechLink>
-                            , and <FooterTechLink href="https://sendgrid.com/">SendGrid</FooterTechLink>.
+                            , and <FooterTechLink href="https://nodemailer.com/about/">Nodemailer</FooterTechLink>.
                             <a href="https://github.com/brianpost/portfolio-next" className="link-light ms-3">View source</a>
                         </div>
                     </PageColumn>
