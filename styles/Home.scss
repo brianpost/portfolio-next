@@ -19,3 +19,51 @@
 #About p {
   font-size: 1.1rem;
 }
+
+#Specializations {
+
+  .specializations-card {
+    background-color: #e5fdfd;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 1.8em;
+
+      &::before {
+        content: "\F26B";
+        font-family: "bootstrap-icons";
+        position: absolute;
+        left: 0;
+        font-size: 1.3em;
+        margin-top: -3px;
+        color: $success;
+      }
+      ul {
+        padding-left: 1.5em;
+
+        li {
+          &::before {
+            content: "\F280";
+            font-family: "bootstrap-icons";
+            font-size: 1em;
+            color: $secondary;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  #Specializations {
+    ul {
+      padding-left: 0;
+    }
+  }
+}

@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
     const ContentTechLink = ({href, children}: {href: string, children: React.ReactNode}) => {
         return (
-            <a href={href} className="link-primary text-decoration-none">
+            <a href={href} className="link-primary text-decoration-none fw-bold">
                 {children}
             </a>
         )
@@ -30,6 +30,23 @@ const Home: NextPage = () => {
             <a href={href} className="text-reset text-decoration-none">
                 {children}
             </a>
+        )
+    }
+
+    const SpecializationsCard = (
+        {children}: {children: React.ReactNode}
+    ) => {
+        return (
+            <div className="specializations-card border-0 card mb-4">
+                <div className="card-body">
+                    <h3 className="card-title text-uppercase text-secondary fw-bold h4 mb-3">
+                        Specializations
+                    </h3>
+                    <div className="px-2 pt-2 pb-0">
+                        {children}
+                    </div>
+                </div>
+            </div>
         )
     }
 
@@ -98,29 +115,26 @@ const Home: NextPage = () => {
             </Head>
 
             <header>
-                <div className="container my-5">
+                <div className="container">
                     <PageColumn>
-                        <div className="d-flex flex-sm-row flex-column justify-content-center text-center text-sm-start">
-                            <div className="me-3">
-                                <Image
-                                    priority
-                                    src="/profile.jpg"
-                                    className="rounded-circle"
-                                    height={108}
-                                    width={108}
-                                    alt="Brian Post's profile image"
-                                />
-                            </div>
-                            <div>
-                                <h1 className="h2">
-                                    Brian Post
-                                    <small className="text-muted d-block h5">Web Application Developer</small>
-                                </h1>
-                                <a href={'#Contact'} className="btn btn-sm btn-outline-secondary d-inline-flex align-items-center">
+                        <div className="row">
+                            <div className="col-12 text-end pt-3">
+                                <a href={'#Contact'}
+                                   className="btn btn-sm btn-outline-secondary d-inline-flex align-items-center">
                                     <EnvelopeIcon/> Contact me
                                 </a>
                             </div>
                         </div>
+
+                        <div className="row">
+                            <div className="col-12 text-center mt-4 mb-2">
+                            <h1 className="h2">
+                                    Brian Post
+                                    <small className="text-muted d-block h5">Full-Stack Developer</small>
+                                </h1>
+                            </div>
+                        </div>
+
                     </PageColumn>
                 </div>
             </header>
@@ -128,27 +142,62 @@ const Home: NextPage = () => {
             <main>
                 <div className="container">
 
-                    <section id="About">
+                    <section id="Specializations">
                         <PageColumn>
-                            <div className="p-2">
-                                <p>Hello, I&apos;m Brian.  I&apos;m a Full Stack Web Application Developer.</p>
-                                <p>
-                                    My current focus is on building complex websites and applications
-                                    using <ContentTechLink href="https://reactjs.org/">React</ContentTechLink>
-                                    , <ContentTechLink href="https://nextjs.org/">Next.js</ContentTechLink>
-                                    , <ContentTechLink href="https://www.typescriptlang.org/">TypeScript</ContentTechLink>
-                                    , <ContentTechLink href="https://www.php.net/">PHP</ContentTechLink>
-                                    , <ContentTechLink href="https://symfony.com/">Symfony</ContentTechLink>
-                                    , and <ContentTechLink href="https://mariadb.com/">MariaDB</ContentTechLink>.
-                                </p>
-                            </div>
+                            <SpecializationsCard>
+                                <ul>
+                                    <li>PHP Website & Application Development
+                                        <ul>
+                                            <li>Content Management Systems
+                                                <ul>
+                                                    <li>Drupal - custom theme, module, and distribution development</li>
+                                                    <li>WordPress - custom plugin development</li>
+                                                </ul>
+                                            </li>
+                                            <li>PHP MVC Frameworks
+                                                <ul>
+                                                    <li>Symfony, Yii, CakePHP - custom applications</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>API Development & Integrations
+                                        <ul>
+                                            <li>REST and custom endpoints</li>
+                                            <li>API Platform (Symfony)</li>
+                                            <li>Third-party integrations - various including payment gateways</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>Front-End Development
+                                        <ul>
+                                            <li>React, Material UI, Next.js</li>
+                                            <li>JavaScript, TypeScript, jQuery, Gulp</li>
+                                            <li>CSS, SCSS, Bootstrap</li>
+                                            <li>Accessibility (WCAG)</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>Databases
+                                        <ul>
+                                            <li>MariaDB, MySQL, SQL Server, MongoDB</li>
+                                            <li>Advanced SQL</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </SpecializationsCard>
                         </PageColumn>
                     </section>
 
                     <section className="mt-4 mb-3">
                         <PageColumn>
-                            <h2 className="h4">Featured Projects</h2>
-                            <p><em>Past projects I&apos;ve developed independently.</em></p>
+                            <div className="row">
+                                <div className="col-12 text-center">
+                                    <h2 className="h3">Featured Projects</h2>
+                                    <p className="small"><em>Past projects I&apos;ve developed independently.</em></p>
+                                </div>
+                            </div>
                         </PageColumn>
                         <PageColumn>
                             <ProjectCard title="DealHeroGames" imageName="dealherogames.png" imagePriority={true}>
