@@ -86,9 +86,9 @@ const Contact = () => {
 
     return (
         <form onSubmit={handleSend}>
-            <h2 className="h3">Contact me</h2>
+            <h2 className="h4 text-uppercase fw-bold">Contact me</h2>
             <div className="my-3">
-                <label htmlFor="inputContactFullName" className="form-label">Full Name</label>
+                <label htmlFor="inputContactFullName" className="form-label">Your Name</label>
                 <input
                     type="text"
                     className="form-control"
@@ -99,7 +99,7 @@ const Contact = () => {
                 />
             </div>
             <div className="my-3">
-                <label htmlFor="inputContactEmail" className="form-label">Email</label>
+                <label htmlFor="inputContactEmail" className="form-label">Your Email</label>
                 <input
                     type="email"
                     className="form-control"
