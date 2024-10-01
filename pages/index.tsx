@@ -190,7 +190,7 @@ const Home: NextPage = () => {
                         </PageColumn>
                     </section>
 
-                    <section className="mt-4 mb-3">
+                    <section className="mb-3">
                         <PageColumn>
                             <div className="row">
                                 <div className="col-12 text-center">
